@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="contact us.css">
+    <link rel="stylesheet" href="headerfooter.css">
+    <link rel="icon" type="image/x-icon" href="logo(pic only).ico">
+    <title>Contact Form</title> 
+    <header class="sticky">
+        <div class="header">
+            <div class="logo">
+                <img src="logo(pic only).png" width="40" height="40" alt="Flower">
+                <img src="logo(words only).png" width="250" height="40" alt="The Flower Loft">
+            </div>
+            <div class="icon">
+                <form>
+                    <input type="text" name="search" placeholder="Search...">
+                </form>
+                <div>
+                    <a href="login.html"><img src="user.png" width="25" height="25" alt="Login/Sign Up"></a>
+                    <a href="Cart.html"><img src="cart.png" width="25" height="25" alt="Cart"></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="line.png" height="10" width="100%">
+
+    
+            <nav class="nav">
+                    <a href="Home.html">Home</a>&nbsp;         
+                    <a href="AboutUs.html">About Us</a>&nbsp; 
+                    <div class="dropdown">
+                        <a href="Product Categories.html">Product</a>
+                        <div class="dropdown-content">
+                            <a href="Best Sellers.html">Best-seller</a>
+                            <a href="Love and Romance.html">Love & Romance</a>
+                            <a href="Grand Opening.html">Grand Opening</a>
+                            <a href="Graduation.html">Graduation</a>
+                            <a href="Get Well Soon.html">Get Well Soon</a>
+                            <a href="Add-on Items.html">Add Ons</a>
+                        </div>
+                    </div>    
+                    <div class="dropdown">
+                        <a href="Workshop.html">Workshop</a>&nbsp; 
+                        <div class="dropdown-content">
+                            <a href="beginners workshop.html">Beginner Workshop</a>
+                            <a href="advanced workshop.html">Advanced Workshop</a>
+                        </div>
+                    </div>
+                    <a href="Review.html">Review</a>&nbsp; 
+                    <a href="contact us.html">Contact Us</a>&nbsp; 
+            </nav>
+            <img src="line.png" height="10" width="100%">
+        </div>
+    </header>
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-card">
+            <h2>THE FLOWER LOFT</h2>
+            <p>Our operating hours are Monday to Sunday (9AM to 5 PM). We will do our best to reply your queries as swiftly as we can.</p>
+            <div class="contact-info">
+                <img src="Phone Icon.jpg" alt="Phone Icon">
+                <span>Phone:</span>
+                <p>+6012 932 8565</p>
+            </div>
+            <div class="contact-info">
+                <img src="Address Icon.jpg" alt="Address Icon">
+                <span>Address:</span>
+                <p>Lot G.1, Level G, Menara Lien Hoe,<br>
+                   No 8, Persiaran Tropicana,<br>
+                   Tropicana Golf & Country Resort,<br>
+                   47410, Petaling Jaya, Selangor</p>
+            </div>
+            <div class="contact-info">
+                <img src="Email Icon.jpg" alt="Email Icon">
+                <span>Email:</span>
+                <p>contact@theflowerloft.co</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-container" id="formContainer">
+        <h1>Get in Touch with Our Florist</h1>
+        <p>Have any questions? Fill up the form below.</p>
+        <form id="contactForm" method="GET" onsubmit="return showModal();"> 
+            <div class="form-group"> 
+                <input type="text" id="name" placeholder="Your Name" required> 
+            </div> 
+            <div class="form-group"> 
+                <input type="email" id="email" placeholder="Email (e.g., example@domain.com)" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address.">
+            </div>
+            <div class="form-group"> 
+                <input type="tel" id="contactNumber" class="full-width" placeholder="Phone Number (e.g., +60123456789)" required pattern="^\+60\d{9,10}$" title="Please enter a valid phone number in the format +60123456789.">
+            </div> 
+            <div class="form-group">
+                <select id="subject" placeholder="Subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="general-inquiry">General Inquiry</option>
+                    <option value="order-status">Order Status</option>
+                    <option value="product-availability">Product Availability</option>
+                    <option value="custom-floral-arrangements">Custom Floral Arrangements</option>
+                    <option value="delivery-information">Delivery Information</option>
+                    <option value="wedding-flowers">Wedding Flowers</option>
+                    <option value="event-flowers">Event Flowers</option>
+                    <option value="corporate-orders">Corporate Orders</option>
+                    <option value="gift-ideas">Gift Ideas</option>
+                    <option value="compliments-complaints">Compliments and Complaints</option>
+                    <option value="collaboration-partnership">Collaboration and Partnership</option>
+                    <option value="careers-opportunities">Careers and Opportunities</option>
+                    <option value="wholesale-inquiries">Wholesale Inquiries</option>
+                    <option value="subscription-services">Subscription Services</option>
+                    <option value="website-issues">Website Issues</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea id="message" class="full-width" placeholder="Type Your Message Here" required></textarea>
+            </div>
+            <div class="form-group"> 
+                <button type="submit" name="submitted" value="true">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Thank You!</h2>
+            <p>Your message has been successfully submitted.</p>
+        </div>
+    </div>
+
+    <script src="contact us.js"> 
+    </script>
+</body>
+<footer>
+    <img src="line.png" height="10" width="100%">
+    <div class="footerdiv">
+        <div class="footerc1">
+            <img src="croppedlogo.png" width="150" height="70" alt="logo">
+            <p class="slogan">Where Every Flower Tells a Story</p>
+            <p><a href="Home.html">Home</a><br></p>
+            <p><a href="AboutUs.html">About Us</a><br></p>
+            <p><a href="contact us.html">Contact Us</a><br></p>
+            <p>
+                <a href="https://www.instagram.com"><img src="instagram.png" height="20" width="20" alt="instagram page"></a>
+                <a href="https://www.pinterest.com"><img src="pinterest.png" height="20" width="20" alt="pinterest page"></a>
+                <a href="https://twitter.com"><img src="twitter.png" height="20" width="20" alt="twitter page"></a>
+                <a href="https://www.facebook.com"><img src="facebook.png" height="20" width="20" alt="facebook page"></a>
+                <br>
+            </p>
+        </div>
+        
+        <div class="footerc2">
+            <p><a href="Product Categories.html">Product</a><br></p>
+            <p><a href="Best Sellers.html">Best-seller</a><br></p>
+            <p><a href="Love and Romance.html">Love & Romance</a><br></p>
+            <p><a href="Grand Opening.html">Grand Opening</a><br></p>
+            <p><a href="Graduation.html">Graduation</a><br></p>
+            <p><a href="Get Well Soon.html">Get Well Soon</a><br></p>
+            <p><a href="Add-on Items.html">Add Ons</a><br></p>
+            <p><a href="Workshop.html">Workshop</a><br></p>
+        </div>
+        
+        <div class="footerc3">
+            <p><a href="signup.html">Sign Up</a><br></p>
+            <p><a href="faq.html">FAQs</a><br></p>
+            <p><a href="Careers.html">Careers</a><br></p>
+            <p><a href="Review.html">Review</a><br></p>
+            <p><a href="t&c.html">Terms & Conditions</a><br></p>
+            <p><a href="privacypolicy.html">Privacy policy</a></p>
+        </div>
+    </div>    
+    <img src="line.png" height="10" width="100%">
+    <div class="copyrightdiv">
+        <p><span>&#169 Copyright theFlowerLoft</span></p>
+    </div>
+</footer>
+</html>

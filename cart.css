@@ -1,0 +1,37 @@
+body{
+    background-color:#e1dad3;
+}
+
+h1{
+    color:#311800;
+    margin-top:180px;
+    text-align:center;
+    border-radius:10px;
+    margin-inline:30%;
+}
+
+.empty{
+    align-items: center;
+    justify-content: center;
+    padding-top:5%;
+    padding-bottom: 20%;
+    padding-inline:30%;
+    text-align:center;
+    font-size:x-large;
+    color: #311800  
+}
+.continueshopping{
+    border-radius:10px;
+    padding:5px;
+    padding-block:10px;
+    margin-inline:20%;
+
+}
+.continueshopping button {    
+    background-color:#d7a49a;
+    border-radius:10px;
+    border:none;
+    padding:5px;
+    font-size: large;
+
+}

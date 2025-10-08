@@ -1,0 +1,168 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #E1DAD3;
+    margin: 0;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.container{
+    max-width: 2000px; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+}
+
+.section {
+    padding: 20px;
+}
+
+.background-section {
+    position: relative;
+    color: white;
+    text-align: center;
+    background: url('workshop page background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.background-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.background-section h1, .background-section p {
+    position: relative;
+    z-index: 2;
+}
+
+.background-section h1 {
+    margin: 0;
+    font-size: 3.5em;
+    padding: 20px;
+    color: white;
+}
+
+.background-section p {
+    margin: 0;
+    font-size: 1.2em;
+    padding: 20px;
+    color: white;
+    line-height: 1.8;
+}
+
+.workshop-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -5px;
+    margin-right: -5px;
+    width: 100%; 
+    
+}
+
+.workshop-option {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 30%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 15px; 
+    margin-right: 15px;
+    text-align: center;
+    cursor: pointer; 
+    border-radius: 10px;
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.workshop-option h2, .workshop-option p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.workshop-option img {
+    width: 100%;
+    height: auto;  
+    object-fit: cover; 
+    border-radius: 0.625em; 
+}
+
+.workshop-option:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+}
+
+.benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.benefit:first-of-type {
+    background-color: #c98375;
+    padding: 10px; 
+}
+
+.benefit:nth-of-type(3) {
+    background-color: #c98375;
+    padding: 10px; 
+}
+
+.benefit-image {
+    flex: 1;
+}
+
+.benefit-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.benefit-text {
+    width: 65%; 
+    margin-left: auto; 
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.benefit-text p{
+    font-size: 17px; 
+    line-height: 35px;
+}
+
+.benefit.reverse {
+    flex-direction: row-reverse;
+    padding-left: 20px;
+    padding-right: 30px;
+}

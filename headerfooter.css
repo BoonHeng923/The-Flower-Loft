@@ -1,0 +1,158 @@
+header{
+    background-color:#E1DAD3;
+}
+
+nav{
+    display:flex;
+    flex-direction: row;
+    font-family: Georgia, serif;
+    background-color: #d7a49a;
+    padding-top: 20px;
+    padding-bottom:20px;
+    padding-inline:15%;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+
+.header{
+    display:flex;
+    z-index:1
+}
+
+.logo{
+    flex-direction:row;
+    flex:1;
+    justify-content:left;
+}
+.icon{
+    display:flex;
+    flex-direction:row;
+    justify-content: right;
+    padding-top:8px;
+    padding-bottom:5px;
+    padding-right:2vh;
+}
+
+
+a {
+    color:#311800;
+    text-align:center;
+    text-decoration:none;
+    font-family:Georgia,sans serif;
+    padding:5px;
+    padding-right:10px;
+    padding-left:10px;
+}
+
+a:hover{
+    color:#E4C9B6;
+}
+
+.sticky{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding-top:10px;
+    z-index: 5;
+}
+
+.dropdown {
+    position:relative;
+    display:inline-block;
+    padding:5px;
+    padding-left:10px;
+    padding-right:10px;
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(99, 98, 98, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #d7a49a;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}   
+
+input[name=search] {
+    border:none;
+    background-color: #e1dad3;
+    background-image: url('search.png');
+    background-position: 0px 0px; 
+    background-repeat: no-repeat;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    background-size: 25px 25px;
+    padding: 12px 20px 0px 20px;
+    transition: width 1.5s;
+    width:0px;
+  }
+  
+  input[name=search]:hover {
+    width: 100px;
+    border:none;
+    border-bottom: 2px solid #c17363;
+  }
+
+  input[name=search]:focus{
+    text-indent:10px;
+    border: none;
+    outline:none;
+    border-bottom:2px solid #c17363;
+  }
+
+  input[name=search]::placeholder {
+    text-indent:10px;
+    border:none;
+    color: #c17363;
+    font-size:medium;
+    align-self:center;
+    opacity: 75%; 
+  }
+
+footer{
+    width:100%;
+    bottom:0px;
+    left:0px;
+    right:0px;
+}
+
+.footerdiv {
+    display: flex;
+    flex-direction: row;
+    background-color: #d7a49a;
+    text-decoration: none;
+    text-align: center;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+}
+
+
+.footerc1,.footerc2,.footerc3 {
+    padding:35px;
+    text-decoration:none;
+    
+}
+
+.slogan {
+    font-family:STLiti,Ink Free;
+}
+  
+.copyrightdiv {
+    margin-left:20px;
+    font-size:small;
+}

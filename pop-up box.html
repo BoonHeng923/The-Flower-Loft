@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pop-Up Box</title>
+    <link rel="stylesheet" href="pop up box.css">
+</head>
+<body>
+    <div class="popup-overlay" id="popup">
+        <div class="popup-box">
+            <button class="close-btn" onclick="closePopup()">&times;</button>
+            <div class="popup-left"></div>
+            <div class="popup-right">
+                <h2>Join the Family</h2>
+                <h3>Get 10% Off</h3>
+                <p>Enjoy 10% off your next purchase by joining our family!</p>
+                <form onsubmit="handleSubmit(event)">
+                    <input type="text" name="first-name" placeholder="First Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <button type="submit" class="button-common">Join Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-overlay" id="confirmation">
+        <div class="popup-box">
+            <button class="close-btn" onclick="closeConfirmation()">&times;</button>
+            <div class="popup-left"></div>
+            <div class="confirmation-right">
+                <h2>Thank You!</h2>
+                <p>Please check your email for more information!</p>
+            </div>
+        </div>
+    </div>
+    <script src="pop up box.js"></script>
+</body>
+</html>
