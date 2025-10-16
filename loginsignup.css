@@ -1,0 +1,140 @@
+body{
+    background-color:#e1dad3;
+    margin: 0;
+    padding-top: 150px;
+}
+
+.biglogo{
+    display: flex;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.loginsignup{
+    background-color: #d7a49a;
+    color: whitesmoke;
+    border-radius: 30px;
+    justify-content: center;
+    text-align: center;
+    font-family: Georgia, serif;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-inline: 20%;
+    margin-bottom: 60px;
+}
+
+input{
+    background-color: #d7a49a;
+    color: white;
+    border: none;
+    border-bottom: 2px solid #c17363;
+    text-align: center;
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    background-color: #d7a49a;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding-block: 5px;
+    padding-inline: 10px;
+    transition-duration: 0.4s;
+    font-size: medium;
+    font-family: Georgia, serif;
+}
+
+button:hover{
+    background-color: #c17363;
+}
+
+.tiny {
+    font-size: x-small;
+}
+
+.vline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logingrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.signupgrid{
+    padding-block: 20px;
+    padding-inline: 50px;
+    border-left: 2px solid #c17363;
+    
+}
+
+.loginform{
+    padding-block: 20px;
+    padding-inline: 50px;
+    flex-grow: 1;
+}
+
+.signupbtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+::placeholder {
+    border: none;
+    color: white;
+    font-size: medium;
+    align-self: center; 
+    opacity: 35%;
+    text-align: center;
+}
+
+.signupbtnsdiv1, .signupbtnsdiv2, .signupbtnsdiv3{
+    padding-inline: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px){
+    .biglogo {
+        padding: 0 10%;
+    }
+
+    .loginsignup{
+        margin: 0 10%;
+    }
+
+    .logingrid{
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+
+    .signupgrid,
+    .loginform{
+        padding: 10px;
+    }
+    
+    .signupgrid{
+        border-top: 2px solid #c17363;
+        margin-inline: 15%;    
+        border-left: none; 
+    }
+
+    .signupbtnsdiv1, .signupbtnsdiv2, .signupbtnsdiv3{
+        padding: 10px;
+    }
+
+    input{
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    button{
+        font-size: small; /* Adjust button font size for smaller screens */
+    }
+}
