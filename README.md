@@ -77,7 +77,7 @@ The website theme embodies soft pastel tones and a minimalist floral aesthetic, 
 ## Reflection
 This project enhanced our technical and teamwork skills as we collaborated to design and develop a responsive, user-friendly e-commerce website. We learned to combine creativity with functionality, maintain consistent design, and solve challenges through effective communication and collaboration.
 
-## Credit
+## Credits
 **Developer:**
 1. Goh Irene
 2. Kelly Jong Qiao Jie
